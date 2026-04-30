@@ -1,0 +1,23 @@
+# ==============================================================================
+# R2S Gateway 配置文件
+# ==============================================================================
+
+serial:
+  port: "/dev/ttyUSB0"
+  baudRate: 9600
+
+# 阿里云 IoT MQTT 配置
+mqtt:
+  broker: "gaq2dx6XevM.iot-as-mqtt.cn-shanghai.aliyuncs.com"
+  brokerPort: 1883
+  clientId: "haskell_001|securemode=3,signmethod=hmacmd5|"
+  topic: "/broadcast/gaq2dx6XevM/data"
+  subscribeTopic: "/broadcast/gaq2dx6XevM/data"
+  username: "haskell_001&gaq2dx6XevM"
+  password: "915C14B9D4C9EE8F5E4C852F2CBE763E"
+
+database:
+  dbPath: "gateway.db"
+
+http:
+  httpPort: 8080

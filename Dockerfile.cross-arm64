@@ -1,0 +1,9 @@
+FROM haskell:9.6-bullseye
+
+# 更新源并安装我们需要的 C 语言静态库和开发包（比如 SQLite）
+RUN apt-get update && \
+    apt-get install -y libsqlite3-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# 设置容器启动时的默认工作目录
+WORKDIR /app

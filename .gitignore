@@ -1,0 +1,16 @@
+# 编译相关的缓存目录
+dist-newstyle/
+out_bin/
+
+# 数据库文件 (运行时产生，不需要上传)
+*.db
+*.db-journal
+gateway.db
+
+# Haskell 中间产物
+*.o
+*.hi
+.ghc.environment.*
+
+# 配置文件 (你可以根据需要选择要不要屏蔽，或者传个 .example 模板)
+# config.yaml

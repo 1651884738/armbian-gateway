@@ -1,0 +1,23 @@
+# ==============================================================================
+# R2S Gateway 测试配置 — 使用免费公共 MQTT 服务器验证功能
+# ==============================================================================
+
+serial:
+  port: "/dev/ttyUSB0"
+  baudRate: 9600
+
+# 使用免费公共 MQTT 服务器测试（无需认证）
+mqtt:
+  broker: "broker.hivemq.com"
+  brokerPort: 1883
+  clientId: "r2s-gateway-test-001"
+  topic: "r2s/test/data"
+  subscribeTopic: "r2s/test/data"
+  username: null
+  password: null
+
+database:
+  dbPath: "gateway.db"
+
+http:
+  httpPort: 8080
